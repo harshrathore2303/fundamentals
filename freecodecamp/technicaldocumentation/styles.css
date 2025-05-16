@@ -1,0 +1,119 @@
+body, html {
+    background-color: white;
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    border-right: solid;
+    border-right-color: yellow;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    position: relative;
+    border-top: solid;
+    border-color: yellow;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    color: rgb(255, 102, 0);
+}
+#navbar a:hover, #navbar a:active {
+    text-decoration: underline;
+    color: crimson;
+}
+
+header {
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(255, 102, 0);
+}
+
+#main-doc {
+    position: absolute;
+    top: 0;
+    left: 320px;
+}
+
+#main-doc header{
+    text-decoration: underline;
+    text-align: left;
+    margin: 0;
+}
+#main-doc section{
+    margin: 30px 20px;
+    border-bottom: 1px dashed #4d4e53;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 810px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
