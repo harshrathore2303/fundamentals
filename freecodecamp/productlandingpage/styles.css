@@ -1,0 +1,159 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252437;
+    font-family: sans-serif;
+}
+
+#header-img {
+    width: 250px;
+    height: 100px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    background-color: #252437; /* Prevent content showing through */
+    z-index: 1000;
+}
+
+#nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+
+#nav-bar li {
+    padding: 10px;
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#nav-bar li:hover {
+    background-color: #3949ab;
+    text-decoration: underline;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 100px; /* Leave space for fixed header */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px; /* Prevent content from hiding behind footer */
+}
+
+h1 {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+form #email {
+    border: 2px solid black;
+    height: 20px;
+    width: 200px;
+}
+
+form #submit {
+    border: 2px solid black;
+    height: 20px;
+    width: 100px;
+    background-color: aqua;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 720px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #nav-bar li {
+    margin: 5px;
+  }
+
+  main {
+    margin-top: 400px; /* More margin due to taller header */
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  iframe {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  footer {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
