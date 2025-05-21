@@ -1,0 +1,1 @@
+Deploying a site means making your website available for others to access on the internet. In other words, it's the process of taking your website code (HTML, CSS, JavaScript, backend code, etc.) and putting it on a web server so that people can visit it using a web browser.
