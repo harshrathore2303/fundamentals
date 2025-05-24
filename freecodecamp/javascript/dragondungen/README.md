@@ -28,9 +28,3 @@ The **Dragon Dungeon** game is a basic interactive application where users are p
 - Functions
 - Math.random()
 - User input using `prompt()` and `alert()`
-
-## 📦 How to Run Locally
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/dragon-dungeon-game.git
