@@ -12,8 +12,8 @@ We can do matching without regrex as well but it requires unneccessary logic and
 
 # Creation
 We can create regex in two ways-
-- Using a regular expression literal
+- Using a regular expression literal  
 const expression = /Harshit#123/;
 
-- Using contructor
-const expression = new RegExp("Harshit#123");
+- Using contructor  
+const expression = new RegExp("Harshit#123"); //new RegExp(pattern [, flags])
